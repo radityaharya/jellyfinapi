@@ -112,7 +112,7 @@ class Configuration(object):
 
         # Current API environment
         self._environment = environment
-        
+
         if server_url is not None:
             self._server_url = server_url
             self.environments[Environment.CUSTOM] = {Server.DEFAULT: server_url}

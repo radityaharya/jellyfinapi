@@ -1,11 +1,8 @@
 # -*- coding: utf-8 -*-
 
 
-import xml.etree.ElementTree as ET
 import logging
 from jellyfinapi.api_helper import APIHelper
-from jellyfinapi.configuration import Server
-from jellyfinapi.utilities.xml_utilities import XmlUtilities
 from jellyfinapi.controllers.base_controller import BaseController
 from jellyfinapi.models.user_dto import UserDto
 from jellyfinapi.models.authentication_result import AuthenticationResult

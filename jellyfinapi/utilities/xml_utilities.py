@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 
 
-import xml.etree.ElementTree as ET
 import datetime
-import dateutil.parser
+import xml.etree.ElementTree as ET
 
+import dateutil.parser
 from jellyfinapi.api_helper import APIHelper
 
 

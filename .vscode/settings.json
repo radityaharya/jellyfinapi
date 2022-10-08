@@ -8,5 +8,6 @@
     ],
     "python.testing.pytestEnabled": false,
     "python.testing.unittestEnabled": true,
-    "todo-tree.tree.showBadges": false
+    "todo-tree.tree.showBadges": false,
+    "python.formatting.provider": "black"
 }

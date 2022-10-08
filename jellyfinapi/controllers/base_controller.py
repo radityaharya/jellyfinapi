@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 
 
-import platform
 from jellyfinapi.api_helper import APIHelper
 from jellyfinapi.exceptions.api_exception import APIException
 

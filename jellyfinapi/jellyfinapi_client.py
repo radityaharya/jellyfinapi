@@ -77,7 +77,8 @@ from jellyfinapi.controllers.video_attachments_controller import (
 )
 from jellyfinapi.controllers.videos_controller import VideosController
 from jellyfinapi.controllers.years_controller import YearsController
-from jellyfinapi.configuration import Server, Environment
+from jellyfinapi.configuration import Environment
+
 
 class JellyfinapiClient(object):
     @lazy_property
@@ -347,12 +348,12 @@ class JellyfinapiClient(object):
         retry_statuses=[408, 413, 429, 500, 502, 503, 504, 521, 522, 524],
         retry_methods=["GET", "PUT"],
         environment=Environment.PRODUCTION,
-        server_url = None,
+        server_url=None,
         x_emby_token=None,
         config=None,
     ):
         if config is None:
-            
+
             self.config = Configuration(
                 http_client_instance=http_client_instance,
                 override_http_client_configuration=override_http_client_configuration,
