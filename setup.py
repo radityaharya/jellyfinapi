@@ -10,11 +10,6 @@ else:
     with open("README.md", "r", encoding="utf-8") as fh:
         long_description = fh.read()
 
-# requirements
-with open("requirements.txt", "r") as fh:
-    requirements = fh.read().splitlines()
-    requirements = [r for r in requirements if not r.startswith("#")]
-
 setup(
     name="jellyfinapi",
     version="10.8.5",
@@ -25,7 +20,14 @@ setup(
     author_email="radityaharya02@gmail.com",
     url="https://github.com/radityaharya/jellyfinapi",
     packages=find_packages(),
-    install_requires=requirements,
+    install_requires=[
+        'jsonpickle~=1.4, >= 1.4.1',
+        'requests~=2.25',
+        'cachecontrol~=0.12.6',
+        'python-dateutil~=2.8.1',
+        'enum34~=1.1, >=1.1.10',
+        'deprecation~=2.1'
+    ],
     tests_require=["nose>=1.3.7"],
     test_suite="nose.collector",
 )

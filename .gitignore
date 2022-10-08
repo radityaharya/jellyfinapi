@@ -1,1 +1,3 @@
 *.pyc
+build/
+jellyfinapi.egg-info/
