@@ -116,7 +116,7 @@ class BaseController(object):
             raise APIException("HTTP response not OK.", response)
 
     def get_user_agent(self):
-        user_agent = "APIMATIC 3.0"
+        user_agent = "jellyfinapi-python"
         parameters = {}
 
         agent = APIHelper.append_url_with_template_parameters(user_agent, parameters)
