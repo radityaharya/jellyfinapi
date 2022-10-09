@@ -5,27 +5,9 @@ Python interface to Jellyfin Instance
 
 ## Installation
 
-### 1. Clone Project
-
-Clone the project from GitHub:
-
-```bash 
-git clone https://github.com/radityaharya/jellyfinapi
-```
-
-### 2. Change Directory
+### 1. Install Package
 ```bash
-cd jellyfinapi
-```
-
-### 3. Install Dependencies
-```bash
-pip install -r requirements.txt
-```
-
-### 4. Install Package
-```bash
-pip install .
+pip install jellyfinapi
 ```
 
 ## Initialize the API Client
